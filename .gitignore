@@ -1,0 +1,8 @@
+.idea
+coverage
+logs
+node_modules
+src
+views
+.eslintrc.json
+JPK.ps1

@@ -1,0 +1,49 @@
+{
+	"name": "node-app",
+	"version": "1.0.0",
+	"description": "nothing",
+	"main": "src/app.js",
+	"scripts": {
+		"test": "cls && jest --verbose --maxWorkers=1",
+		"dev": "cls && supervisor index.js",
+		"start": "node index.js",
+		"shut": "mongo admin --eval \"db.shutdownServer()\"\n"
+	},
+	"engines": {
+		"node": "14.17.5"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^16.7.2",
+		"config": "^3.3.6",
+		"cors": "^2.8.5",
+		"debug": "^4.3.2",
+		"eslint": "^7.32.0",
+		"eslint-config-standard": "^16.0.3",
+		"eslint-plugin-import": "^2.24.2",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^5.1.0",
+		"jest": "^27.1.1",
+		"morgan": "^1.10.0",
+		"supertest": "^6.1.6",
+		"supervisor": "^0.12.0"
+	},
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"compression": "^1.7.4",
+		"express": "^4.17.1",
+		"express-async-errors": "^3.1.1",
+		"fawn": "^2.1.5",
+		"helmet": "^4.6.0",
+		"joi": "^17.4.2",
+		"joi-objectid": "^3.0.1",
+		"joi-password-complexity": "^5.1.0",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.1",
+		"mongoose": "^6.0.3",
+		"pug": "^3.0.2",
+		"winston": "^3.3.3"
+	}
+}
